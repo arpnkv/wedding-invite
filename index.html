@@ -3,201 +3,99 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Александра & Артем — Свадебное приглашение</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #b76e79;
-            --secondary-color: #fdf6f0;
-            --text-color: #333;
-            --accent-color: #fff0e5;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: var(--secondary-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            position: relative;
-            height: 100vh;
-            background: url('photo.jpg') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.4);
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        .overlay h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        .overlay p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-        }
-
-        section {
-            padding: 2rem 1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: var(--primary-color);
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .countdown {
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .gifts ul {
-            padding-left: 1.2rem;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .form-group label {
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            padding: 10px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            width: 100%;
-        }
-
-        .form-group button {
-            padding: 12px;
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-            border-radius: 10px;
-            margin-top: 1rem;
-        }
-    </style>
+    <title>Свадьба Александры и Артема</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="overlay">
-        <h1>Александра & Артем</h1>
-        <p>Свадьба 6 сентября 2025</p>
-    </div>
-</header>
-
-<section>
-    <div class="countdown">
-        До свадьбы осталось: <span id="timer">Загрузка...</span>
+<section class="section welcome">
+    <div class="content">
+        <div class="text">
+            <h1>Дорогие гости!</h1>
+            <h2>МЫ ЖЕНИМСЯ!</h2>
+            <p>Это радостное событие мы хотим отметить в кругу самых близких для нас людей. Будем очень рады, если в этот день, вы сможете присутствовать на нашем празднике.</p>
+            <h3>Свадьба состоится</h3>
+            <p class="date">6 сентября 2025 года</p>
+            <p class="with-love">С любовью, Александра и Артём</p>
+        </div>
+        <div class="photo-placeholder"></div>
     </div>
 </section>
 
-<section>
-    <h2 class="section-title">Дорогой гость!</h2>
-    <p>Мы будем рады видеть тебя на нашем празднике любви! Пожалуйста, заполни форму ниже, чтобы подтвердить своё присутствие и помочь нам лучше подготовиться.</p>
-</section>
+<div class="divider"></div>
 
-<section class="gifts">
-    <h2 class="section-title">Пожелания по подаркам</h2>
-    <p>Ваше присутствие — лучший подарок! Если вы всё же хотите нас порадовать, будем признательны за:</p>
+<section class="section program">
+    <h2>Программа дня</h2>
     <ul>
-        <li>Конвертик с теплом 🧧</li>
-        <li>Подарочные карты магазинов</li>
-        <li>Пожелания и добрые слова ✨</li>
+        <li><strong>15:30</strong> — Сбор гостей</li>
+        <li><strong>16:00</strong> — Свадебная церемония</li>
+        <li><strong>16:30</strong> — Фото с гостями</li>
+        <li><strong>17:00</strong> — Праздничный банкет</li>
+        <li><strong>00:00</strong> — Окончание мероприятия</li>
     </ul>
 </section>
 
-<section>
-    <h2 class="section-title">Подтвердите участие</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="form-group">
-        <label for="name">Фамилия и имя:</label>
-        <input type="text" id="name" name="name" required>
+<div class="divider"></div>
 
-        <label for="attending">Вы сможете прийти?</label>
-        <select id="attending" name="attending">
-            <option value="yes">Да, с радостью!</option>
-            <option value="maybe">Пока не уверен(а)</option>
-            <option value="no">К сожалению, нет</option>
-        </select>
+<section class="section countdown">
+    <h2>До свадьбы осталось</h2>
+    <div id="timer">
+        <div><span id="days">0</span><p>дней</p></div>
+        <div><span id="hours">0</span><p>часов</p></div>
+        <div><span id="minutes">0</span><p>минут</p></div>
+        <div><span id="seconds">0</span><p>секунд</p></div>
+    </div>
+</section>
 
-        <label for="guests">Сколько гостей с вами?</label>
-        <select id="guests" name="guests">
-            <option value="0">Только я</option>
-            <option value="1">+1 гость</option>
-            <option value="2">+2 гостя</option>
-        </select>
+<div class="divider"></div>
 
-        <label for="message">Пожелания или вопросы:</label>
-        <textarea id="message" name="message" rows="3"></textarea>
+<section class="section location">
+    <h2>Локация</h2>
+    <p>Наша свадьба пройдет на базе отдыха «ТАМ, ГДЕ ХОРОШО».</p>
+    <p>Витебская обл., д. Дымовщина, ул. Леспромхозная, 42.</p>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8576745a88aa1e68f4f8e2dc90cf0eec2e0efbb4f9467e4d6b1997c09ef51dc8&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+</section>
 
+<div class="divider"></div>
+
+<section class="section details">
+    <h2>Детали</h2>
+    <p>Чтобы ваши руки были свободны для объятий, будем рады легким подаркам в конвертах.</p>
+    <p>Приятным комплиментом будет бутылочка вашего любимого вина.</p>
+    <p>Пожалуйста, воздержитесь от криков «Горько!» — поцелуи мы выражаем по желанию 😄</p>
+</section>
+
+<div class="divider"></div>
+
+<section class="section dresscode">
+    <h2>Дресс-код</h2>
+    <p>Будем благодарны, если вы поддержите цветовую палитру торжества и подберете праздничный наряд в пастельных оттенках.</p>
+</section>
+
+<div class="divider"></div>
+
+<section class="section contact">
+    <h2>Организатор</h2>
+    <p>По всем вопросам обращайтесь к организатору:</p>
+    <p><strong>Мария</strong></p>
+    <p>📞 <a href="tel:+375291112233">+375 (29) 111-22-33</a></p>
+    <p>📨 <a href="https://t.me/mariaplanner" target="_blank">Telegram</a> | <a href="https://wa.me/375291112233" target="_blank">WhatsApp</a></p>
+</section>
+
+<div class="divider"></div>
+
+<section class="section form">
+    <h2>Присутствие на торжестве</h2>
+    <p>Будем ждать ваш ответ до 01.04.2025</p>
+    <form>
+        <input type="text" placeholder="Ваше имя и фамилия" required />
+        <label><input type="radio" name="attend" /> Приду</label>
+        <label><input type="radio" name="attend" /> Не смогу</label>
+        <textarea placeholder="Комментарий"></textarea>
         <button type="submit">Отправить</button>
     </form>
 </section>
 
-<section>
-    <h2 class="section-title">Место проведения</h2>
-    <p>Ждём вас по адресу: г. Витебск, ул. Праздничная, 1</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen loading="lazy"></iframe>
-</section>
-
-<script>
-    const weddingDate = new Date("2025-09-06T00:00:00").getTime();
-    const timerEl = document.getElementById("timer");
-
-    const countdown = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = weddingDate - now;
-
-        if (distance < 0) {
-            clearInterval(countdown);
-            timerEl.innerText = "Свадьба уже состоялась!";
-            return;
-        }
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        timerEl.innerText = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
-    }, 1000);
-</script>
+<script src="script.js"></script>
 </body>
 </html>

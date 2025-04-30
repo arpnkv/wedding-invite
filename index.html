@@ -1,100 +1,250 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Свадьба Александры и Артема</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадебное приглашение</title>
+    <meta name="description" content="Мы рады пригласить вас на нашу свадьбу!">
+    <meta property="og:title" content="Приглашение на свадьбу">
+    <meta property="og:description" content="Мы рады пригласить вас на нашу свадьбу!">
+    <meta property="og:image" content="URL_картинки_свадьбы">
+    <link rel="icon" href="wedding-ring.png">
+    <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-<section class="section welcome">
-    <div class="content">
-        <div class="text">
-            <h1>Дорогие гости!</h1>
-            <h2>МЫ ЖЕНИМСЯ!</h2>
-            <p>Это радостное событие мы хотим отметить в кругу самых близких для нас людей. Будем очень рады, если в этот день, вы сможете присутствовать на нашем празднике.</p>
-            <h3>Свадьба состоится</h3>
-            <p class="date">6 сентября 2025 года</p>
-            <p class="with-love">С любовью, Александра и Артём</p>
-        </div>
-        <div class="photo-placeholder"></div>
-    </div>
-</section>
 
-<div class="divider"></div>
+<div class="container">
 
-<section class="section program">
-    <h2>Программа дня</h2>
-    <ul>
-        <li><strong>15:30</strong> — Сбор гостей</li>
-        <li><strong>16:00</strong> — Свадебная церемония</li>
-        <li><strong>16:30</strong> — Фото с гостями</li>
-        <li><strong>17:00</strong> — Праздничный банкет</li>
-        <li><strong>00:00</strong> — Окончание мероприятия</li>
-    </ul>
-</section>
+    <!-- Заголовок -->
+    <section class="section headline-section">
+       <div class="headline-description">
+           <h1>Дорогой гость!</h1>
+           <p>Мы рады сообщить Вам, что 22.10.2025 состоится самое главное торжество в нашей жизни - день нашей свадьбы!</p>
+           <p>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
+           <p>Свадьба состоится: <strong>06 сентября 2025 года</strong></p>
+           <p>Ждём Вас!</p>
+       </div>
+        <img src="photos/photo1.jpg" alt="photo1" width="500" height="700">
+    </section>
 
-<div class="divider"></div>
+    <!-- Программа дня -->
+    <section class="section schedule-section">
+        <h2>Программа дня</h2>
+        <ul class="schedule-list">
+            <li>
+                <div class="left">
+                    <span class="time">15:30</span>
+                    <img src="icons/wedding-location.png" alt="Иконка гостей" />
+                </div>
+                <div class="text-block">
+                    <h3>Сбор гостей</h3>
+                    <p>Просим взять с собой хорошее настроение и улыбки.</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <span class="time">16:00</span>
+                    <img src="icons/hall.png" alt="Иконка церемонии" />
+                </div>
+                <div class="text-block">
+                    <h3>Свадебная церемония</h3>
+                    <p>Приготовьте носовые платочки для трогательного момента.</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <span class="time">16:30</span>
+                    <img src="icons/photo-camera.png" alt="Иконка фото" />
+                </div>
+                <div class="text-block">
+                    <h3>Фото с гостями</h3>
+                    <p>Получим незабываемые эмоции и красивые фотографии.</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <span class="time">17:00</span>
+                    <img src="icons/dinner.png" alt="Иконка банкета" />
+                </div>
+                <div class="text-block">
+                    <h3>Праздничный банкет</h3>
+                    <p>Время вкусной еды, танцев и развлечений.</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <span class="time">00:00</span>
+                    <img src="icons/just-married.png" alt="Иконка окончания" />
+                </div>
+                <div class="text-block">
+                    <h3>Окончание мероприятия</h3>
+                    <p>К сожалению, даже такой прекрасный вечер может закончиться.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
-<section class="section countdown">
+    <!-- Таймер -->
+    <section class="section countdown-section">
     <h2>До свадьбы осталось</h2>
-    <div id="timer">
-        <div><span id="days">0</span><p>дней</p></div>
-        <div><span id="hours">0</span><p>часов</p></div>
-        <div><span id="minutes">0</span><p>минут</p></div>
-        <div><span id="seconds">0</span><p>секунд</p></div>
+    <div class="countdown">
+        <div class="countdown-item">
+            <span id="days">00</span>
+            <small>дней</small>
+        </div>
+        <div class="countdown-item">
+            <span id="hours">00</span>
+            <small>часов</small>
+        </div>
+        <div class="countdown-item">
+            <span id="minutes">00</span>
+            <small>минут</small>
+        </div>
+        <div class="countdown-item">
+            <span id="seconds">00</span>
+            <small>секунд</small>
+        </div>
     </div>
 </section>
 
-<div class="divider"></div>
+    <!-- Локация -->
+    <section class="section location-section">
+        <h2>Локация</h2>
+        <p>Наша свадьба пройдет на базе отдыха «ТАМ, ГДЕ ХОРОШО». Она находится по адресу:</p>
+        <p>Витебская обл., д. Дымовщина, ул. Леспромхозная, 42.</p>
+        <div class="location-container">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b5b3616f55c1e30fb86600a55de81a49b1c6bf370bde01da8368a24363e6603&amp;source=constructor"
+                width="100%"
+                height="400"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
 
-<section class="section location">
-    <h2>Локация</h2>
-    <p>Наша свадьба пройдет на базе отдыха «ТАМ, ГДЕ ХОРОШО».</p>
-    <p>Витебская обл., д. Дымовщина, ул. Леспромхозная, 42.</p>
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8576745a88aa1e68f4f8e2dc90cf0eec2e0efbb4f9467e4d6b1997c09ef51dc8&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
-</section>
+    <!-- Детали -->
+    <section class="section details-section">
+        <h2 class="details-title">Детали</h2>
 
-<div class="divider"></div>
+        <div class="detail-block">
+            <p>Чтобы ваши руки были свободны для объятий, будем рады легким подаркам в конвертах.</p>
+            <hr>
+        </div>
 
-<section class="section details">
-    <h2>Детали</h2>
-    <p>Чтобы ваши руки были свободны для объятий, будем рады легким подаркам в конвертах.</p>
-    <p>Приятным комплиментом будет бутылочка вашего любимого вина.</p>
-    <p>Пожалуйста, воздержитесь от криков «Горько!» — поцелуи мы выражаем по желанию 😄</p>
-</section>
+        <div class="detail-block">
+            <p>Приятным комплиментом для нас вместо цветов будет бутылочка вашего любимого вина, которую мы откроем на ближайшем совместном празднике.</p>
+            <hr>
+        </div>
 
-<div class="divider"></div>
+        <div class="detail-block">
+            <p>Будем благодарны, если вы воздержитесь от криков «Горько!» на празднике, ведь поцелуй — знак выражения чувств. Он не может быть по заказу!</p>
+        </div>
+    </section>
 
-<section class="section dresscode">
-    <h2>Дресс-код</h2>
-    <p>Будем благодарны, если вы поддержите цветовую палитру торжества и подберете праздничный наряд в пастельных оттенках.</p>
-</section>
+    <!-- Дресс-код -->
+    <section class="section dresscode-section">
+        <h2 class="dresscode-title">Дресс-код</h2>
+        <p class="dresscode-text">
+            Мы будем очень рады, если вы поддержите цветовую палитру<br>
+            нашего торжества и подберете в своем гардеробе<br>
+            праздничный наряд.
+        </p>
 
-<div class="divider"></div>
+        <div class="color-palette">
+            <div class="color-swatch" style="background-color: #e4dfd7;"></div>
+            <div class="color-swatch" style="background-color: #e6d3b8;"></div>
+            <div class="color-swatch" style="background-color: #c89d6e;"></div>
+            <div class="color-swatch" style="background-color: #babd9f;"></div>
+            <div class="color-swatch" style="background-color: #7a8b6e;"></div>
+            <div class="color-swatch" style="background-color: #5e4a34;"></div>
+        </div>
+    </section>
 
-<section class="section contact">
-    <h2>Организатор</h2>
-    <p>По всем вопросам обращайтесь к организатору:</p>
-    <p><strong>Мария</strong></p>
-    <p>📞 <a href="tel:+375291112233">+375 (29) 111-22-33</a></p>
-    <p>📨 <a href="https://t.me/mariaplanner" target="_blank">Telegram</a> | <a href="https://wa.me/375291112233" target="_blank">WhatsApp</a></p>
-</section>
+    <!-- Организатор -->
+    <section class="section organizer-section">
+        <h2 class="section-title">Организатор свадьбы</h2>
 
-<div class="divider"></div>
+        <div class="organizer-content">
+            <img src="images/lyudmila.jpg" alt="Организатор" class="organizer-photo" />
 
-<section class="section form">
-    <h2>Присутствие на торжестве</h2>
-    <p>Будем ждать ваш ответ до 01.04.2025</p>
-    <form>
-        <input type="text" placeholder="Ваше имя и фамилия" required />
-        <label><input type="radio" name="attend" /> Приду</label>
-        <label><input type="radio" name="attend" /> Не смогу</label>
-        <textarea placeholder="Комментарий"></textarea>
-        <button type="submit">Отправить</button>
-    </form>
-</section>
+            <h3 class="organizer-name">Людмила</h3>
+            <p class="organizer-description">
+                По всем вопросам, связанным с трансфером, размещением гостей, торжественным вечером<br>
+                и сюрпризами, обращайтесь к нашему организатору
+            </p>
+
+            <a class="organizer-phone" href="tel:+375295183650">+375 (29) 518-36-50</a>
+
+            <div class="organizer-icons">
+                <a href="tel:+375295183650" target="_blank"><img src="icons/phone.png" alt="Звонок" /></a>
+                <a href="https://wa.me/375295183650" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp" /></a>
+                <a href="https://t.me/username" target="_blank"><img src="icons/telegram.png" alt="Telegram" /></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Опросник -->
+    <section class="section rsvp-section">
+        <h2 class="rsvp-title">Присутствие на торжестве</h2>
+        <p class="rsvp-description">
+            Ваши ответы на вопросы очень помогут нам при организации свадьбы.<br />
+            Будем ждать ответ до <strong>01.04.2025 г.</strong>
+        </p>
+
+        <form class="rsvp-form" id="rsvpForm">
+            <!-- Вопрос 1 -->
+            <div class="form-group">
+                <label class="form-label">1. Сможете ли вы присутствовать на торжестве?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="attendance" value="yes" required /> Да</label>
+                    <label><input type="radio" name="attendance" value="no" /> Нет</label>
+                </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="form-group">
+                <label for="name" class="form-label">2. Введите Имя и Фамилию</label>
+                <input type="text" id="name" name="name" required placeholder="Имя и Фамилия" />
+                <small class="input-hint">Если вы будете парой или семьей, то внесите все имена и фамилии</small>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="form-group">
+                <label class="form-label">3. Предпочтения по напиткам:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="drinks" value="вино" /> Вино</label>
+                    <label><input type="checkbox" name="drinks" value="шампанское" /> Шампанское</label>
+                    <label><input type="checkbox" name="drinks" value="крепкий алкоголь" /> Крепкий алкоголь</label>
+                    <label><input type="checkbox" name="drinks" value="безалкогольное" /> Безалкогольное</label>
+                </div>
+            </div>
+
+            <!-- Вопрос 4 -->
+            <div class="form-group">
+                <label class="form-label">4. Предпочтения по еде:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="food" value="мясо" /> Мясо</label>
+                    <label><input type="checkbox" name="food" value="рыба" /> Рыба</label>
+                    <label><input type="checkbox" name="food" value="вегетарианское" /> Вегетарианское</label>
+                </div>
+            </div>
+
+            <!-- Вопрос 5 -->
+            <div class="form-group">
+                <label for="comments" class="form-label">5. Аллергии или особые пожелания:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Укажите здесь, если что-то важно знать"></textarea>
+            </div>
+
+            <!-- Кнопка -->
+            <div class="form-group">
+                <button type="submit" class="submit-button">Отправить</button>
+            </div>
+        </form>
+    </section>
+
+</div>
 
 <script src="script.js"></script>
 </body>

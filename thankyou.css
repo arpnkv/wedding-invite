@@ -1,0 +1,29 @@
+/* Стиль для страницы Спасибо */
+section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #ff4500;
+}

@@ -34,6 +34,17 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
+// Локация
+const mapContainer = document.querySelector('.map-container');
+
+mapContainer.addEventListener('mouseenter', () => {
+    mapContainer.classList.add('active');
+});
+
+mapContainer.addEventListener('mouseleave', () => {
+    mapContainer.classList.remove('active');
+});
+
 // Отправка формы в Telegram
     const BOT_TOKEN = 'AAG9IPJvwenee1iaQhn0cFHFB99jeVvdWkI';
     const CHAT_ID = '-1002326818571';

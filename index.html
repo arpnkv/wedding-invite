@@ -10,6 +10,7 @@
     <meta property="og:image" content="URL_картинки_свадьбы">
     <link rel="icon" href="wedding-ring.png">
     <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,12 +20,11 @@
     <section class="section headline-section">
        <div class="headline-description">
            <h1>Дорогой гость!</h1>
-           <p>Мы рады сообщить Вам, что 22.10.2025 состоится самое главное торжество в нашей жизни - день нашей свадьбы!</p>
+           <p>Мы рады сообщить Вам, что <strong>06.09.2025</strong><br/> состоится самое главное торжество в нашей жизни - день нашей свадьбы!</p>
            <p>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
-           <p>Свадьба состоится: <strong>06 сентября 2025 года</strong></p>
            <p>Ждём Вас!</p>
        </div>
-        <img src="photos/photo1.jpg" alt="photo1" width="500" height="700">
+        <img src="photos/photo3.jpg" alt="photo1" width="500" height="700">
     </section>
 
     <!-- Программа дня -->
@@ -109,17 +109,20 @@
 
     <!-- Локация -->
     <section class="section location-section">
-        <h2>Локация</h2>
-        <p>Наша свадьба пройдет на базе отдыха «ТАМ, ГДЕ ХОРОШО». Она находится по адресу:</p>
-        <p>Витебская обл., д. Дымовщина, ул. Леспромхозная, 42.</p>
-        <div class="location-container">
-            <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b5b3616f55c1e30fb86600a55de81a49b1c6bf370bde01da8368a24363e6603&amp;source=constructor"
-                width="100%"
-                height="400"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
+        <div>
+            <h2>Локация</h2>
+            <p>Наша свадьба пройдет на базе отдыха «ТАМ, ГДЕ ХОРОШО». Она находится по адресу:</p>
+            <p>Витебская обл., д. Дымовщина, ул. Леспромхозная, 42.</p>
+            <img src="photos/place.png" alt="База отдыха" class="location-photo">
+            <div class="map-container">
+                <div class="map-overlay"></div>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b5b3616f55c1e30fb86600a55de81a49b1c6bf370bde01da8368a24363e6603&amp;source=constructor"
+                    width="100%"
+                    height="400"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </section>
 
@@ -128,12 +131,12 @@
         <h2 class="details-title">Детали</h2>
 
         <div class="detail-block">
-            <p>Чтобы ваши руки были свободны для объятий, будем рады легким подаркам в конвертах.</p>
+            <p>Ваше присутствие в день нашей свадьбы - самый значимый подарок для нас!</p>
             <hr>
         </div>
 
         <div class="detail-block">
-            <p>Приятным комплиментом для нас вместо цветов будет бутылочка вашего любимого вина, которую мы откроем на ближайшем совместном празднике.</p>
+            <p>Приятным комплиментом для нас вместо цветов будет бутылочка вашего любимого алкоголя, которую мы откроем на ближайшем совместном празднике.</p>
             <hr>
         </div>
 
@@ -146,19 +149,9 @@
     <section class="section dresscode-section">
         <h2 class="dresscode-title">Дресс-код</h2>
         <p class="dresscode-text">
-            Мы будем очень рады, если вы поддержите цветовую палитру<br>
-            нашего торжества и подберете в своем гардеробе<br>
-            праздничный наряд.
+            Предлагаем выбрать наряд, в котором вам будет комфортно и уютно,<br>
+            чтобы насладиться каждым мгновением этого особенного дня!
         </p>
-
-        <div class="color-palette">
-            <div class="color-swatch" style="background-color: #e4dfd7;"></div>
-            <div class="color-swatch" style="background-color: #e6d3b8;"></div>
-            <div class="color-swatch" style="background-color: #c89d6e;"></div>
-            <div class="color-swatch" style="background-color: #babd9f;"></div>
-            <div class="color-swatch" style="background-color: #7a8b6e;"></div>
-            <div class="color-swatch" style="background-color: #5e4a34;"></div>
-        </div>
     </section>
 
     <!-- Организатор -->
@@ -184,64 +177,71 @@
         </div>
     </section>
 
-
     <!-- Опросник -->
     <section class="section rsvp-section">
-        <h2 class="rsvp-title">Присутствие на торжестве</h2>
-        <p class="rsvp-description">
-            Ваши ответы на вопросы очень помогут нам при организации свадьбы.<br />
-            Будем ждать ответ до <strong>01.04.2025 г.</strong>
-        </p>
+        <div>
 
-        <form class="rsvp-form" id="rsvpForm">
-            <!-- Вопрос 1 -->
-            <div class="form-group">
-                <label class="form-label">1. Сможете ли вы присутствовать на торжестве?</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="attendance" value="yes" required /> Да</label>
-                    <label><input type="radio" name="attendance" value="no" /> Нет</label>
+            <h2 class="rsvp-title">Присутствие на торжестве</h2>
+            <p class="rsvp-subtitle">
+                Ваши ответы на вопросы очень помогут нам при организации свадьбы.<br>
+                Будем ждать ответ до <strong>01.08.2025 г.</strong>
+            </p>
+
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label>Сможете ли вы присутствовать на торжестве?</label>
+                    <label><input type="radio" name="attendance" value="Мы придем" required> Я приду / Мы придем</label>
+                    <label><input type="radio" name="attendance" value="Прийти не получится"> Прийти не получится</label>
+                    <label><input type="radio" name="attendance" value="Буду с парой"> Буду со своей парой (+1)</label>
+                    <label><input type="radio" name="attendance" value="Буду с парой"> Буду с детьми</label>
                 </div>
-            </div>
 
-            <!-- Вопрос 2 -->
-            <div class="form-group">
-                <label for="name" class="form-label">2. Введите Имя и Фамилию</label>
-                <input type="text" id="name" name="name" required placeholder="Имя и Фамилия" />
-                <small class="input-hint">Если вы будете парой или семьей, то внесите все имена и фамилии</small>
-            </div>
-
-            <!-- Вопрос 3 -->
-            <div class="form-group">
-                <label class="form-label">3. Предпочтения по напиткам:</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="drinks" value="вино" /> Вино</label>
-                    <label><input type="checkbox" name="drinks" value="шампанское" /> Шампанское</label>
-                    <label><input type="checkbox" name="drinks" value="крепкий алкоголь" /> Крепкий алкоголь</label>
-                    <label><input type="checkbox" name="drinks" value="безалкогольное" /> Безалкогольное</label>
+                <div class="form-group">
+                    <label for="name">Введите Имя и Фамилию</label>
+                    <input type="text" name="name" id="name" placeholder="Имя и фамилия(и)" required>
+                    <small>если вы будете парой или семьей, то внесите все имена и фамилии</small>
                 </div>
-            </div>
 
-            <!-- Вопрос 4 -->
-            <div class="form-group">
-                <label class="form-label">4. Предпочтения по еде:</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="food" value="мясо" /> Мясо</label>
-                    <label><input type="checkbox" name="food" value="рыба" /> Рыба</label>
-                    <label><input type="checkbox" name="food" value="вегетарианское" /> Вегетарианское</label>
+                <div class="form-group">
+                    <label>Предпочтения по напиткам (можно выбрать несколько):</label>
+                    <label><input type="checkbox" name="drinks" value="Вино красное"> Вино красное</label>
+                    <label><input type="checkbox" name="drinks" value="Вино белое"> Вино белое</label>
+                    <label><input type="checkbox" name="drinks" value="Виски"> Виски</label>
+                    <label><input type="checkbox" name="drinks" value="Виски"> Коньяк</label>
+                    <label><input type="checkbox" name="drinks" value="Водка"> Водка</label>
+                    <label><input type="checkbox" name="drinks" value="Шампанское"> Шампанское</label>
+                    <label><input type="checkbox" name="drinks" value="Безалкогольное"> Что-нибудь безалкогольное</label>
                 </div>
-            </div>
 
-            <!-- Вопрос 5 -->
-            <div class="form-group">
-                <label for="comments" class="form-label">5. Аллергии или особые пожелания:</label>
-                <textarea id="comments" name="comments" rows="4" placeholder="Укажите здесь, если что-то важно знать"></textarea>
-            </div>
+                <div class="form-group">
+                    <label>Предпочтения по еде:</label>
+                    <label><input type="checkbox" name="food" value="Не ем рыбу"> Не ем рыбу</label>
+                    <label><input type="checkbox" name="food" value="Не ем мясо"> Не ем мясо</label>
+                    <label><input type="checkbox" name="food" value="Кушаю всё"> Кушаю всё</label>
+                </div>
 
-            <!-- Кнопка -->
-            <div class="form-group">
-                <button type="submit" class="submit-button">Отправить</button>
-            </div>
-        </form>
+                <div class="form-group">
+                    <label for="comment">Если у вас есть аллергия на какой-либо продукт или напиток, то просим указать об этом в комментарии ниже:</label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Ваш комментарий..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Будет общий трансфер, предположительно от ледового дворца</label>
+                    <label><input type="radio" name="attendance" value="Мы придем" required> Нужен трансфер туда</label>
+                    <label><input type="radio" name="attendance" value="Прийти не получится"> Нужен трансфер обратно</label>
+                    <label><input type="radio" name="attendance" value="Буду с парой"> Нужен трансфер в обе стороны</label>
+                    <label><input type="radio" name="attendance" value="Буду с парой"> Трансфер не нужен</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <section class="footer">
+        <h1>МЫ БУДЕМ СЧАСТЛИВЫ ВИДЕТЬ ВАС!</h1>
     </section>
 
 </div>

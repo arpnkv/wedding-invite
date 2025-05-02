@@ -4,6 +4,13 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-image: url('photos/bg.jpg');
@@ -13,14 +20,14 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.7); /* мягкое осветление */
+    background: rgba(255, 255, 255, 0.7);
     z-index: -1;
 }
 
@@ -33,7 +40,9 @@ h1, h2 {
 
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .container section:nth-last-of-type(2) {
@@ -41,8 +50,9 @@ h1, h2 {
 }
 
 .section {
-    border-bottom: 1px solid #ccc;
+    width: 100%;
     padding: 40px 0;
+    border-bottom: 1px solid #ccc;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -64,19 +74,27 @@ h1, h2 {
 }
 
 .headline-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 800px;
+    padding: 0 20px;
+    margin: auto 0;
 }
 
 .headline-description h1 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .headline-description p {
-    margin: 5px 0;
+    margin: 10px 0;
     text-align: center;
+}
+
+.main-photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
 }
 
 /* Программа дня */
@@ -176,7 +194,6 @@ h1, h2 {
 .location-section div {
     max-width: 800px;
     margin: 0 auto;
-    padding: 60px 20px;
     text-align: center;
     font-family: 'Georgia', serif;
 }
@@ -338,7 +355,6 @@ h1, h2 {
 .rsvp-section div {
     max-width: 720px;
     margin: 60px auto;
-    padding: 0 20px;
     text-align: center;
 }
 
@@ -366,8 +382,10 @@ h1, h2 {
     display: block;
     margin-bottom: 5px;
     font-weight: 400;
-    width: max-content;
+    width: 100%;
     cursor: pointer;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .form-group small {
@@ -383,7 +401,7 @@ h1, h2 {
     background-color: rgba(255, 255, 255, 0.15);
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-    padding: 10px 10px 8px 10px;
+    padding: 10px 10px 8px 0;
     outline: none;
     font-family: inherit;
     width: 100%;
@@ -408,11 +426,16 @@ input[type="radio"],
 input[type="checkbox"] {
     accent-color: #000;
     cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: filter 0.2s ease;
 }
 
 input[type="radio"]:hover,
 input[type="checkbox"]:hover {
-    filter: brightness(0.85);
+    filter: brightness(0.8);
 }
 
 .submit-btn {
@@ -436,4 +459,90 @@ input[type="checkbox"]:hover {
 .footer {
     margin: 40px 0;
     text-align: center;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+    .main-photo {
+        width: 350px;
+        height: auto;
+    }
+
+    .headline-description {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .rsvp-section div {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .headline-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-photo {
+        width: 90%;
+        height: auto;
+    }
+
+    .schedule-list li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .schedule-list .left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .countdown {
+        gap: 10px;
+    }
+
+    .countdown-item {
+        padding: 10px;
+        min-width: 50px;
+    }
+
+    .organizer-content {
+        text-align: center;
+    }
+
+    .organizer-photo {
+        width: 120px;
+        height: auto;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    h1, h2 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
 }

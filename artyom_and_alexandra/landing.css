@@ -18,7 +18,7 @@ html, body {
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    background-image: url('photos/bg.jpg');
+    background-image: url('photos/bg-desktop.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
     z-index: -1;
 }
 
@@ -503,6 +503,10 @@ input[type="checkbox"]:hover {
 
 /* Адаптив */
 @media (max-width: 1024px) {
+    body {
+        background-image: url('photos/bg-tablet.jpg');
+    }
+
     .main-photo {
         width: 350px;
         height: auto;
@@ -522,6 +526,10 @@ input[type="checkbox"]:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-image: url('photos/bg-mobile.jpg');
+    }
+
     .headline-section {
         flex-direction: column;
         align-items: center;

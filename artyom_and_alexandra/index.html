@@ -187,7 +187,14 @@
                 Будем ждать ответ до <strong>01.08.2025</strong> г.
             </p>
 
-            <form class="rsvp-form" id="rsvpForm">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="75fdbbc6-6402-4eb0-b344-87932ecb45b1" />
+                <input type="hidden" name="from_name" value="Артем и Александра (приглашение на свадьбу)" />
+                <input type="hidden" name="email" value="sundex019@gmail.com" />
+                <input type="hidden" name="subject" value="Подтверждение присутствия на свадьбе" />
+                <input type="hidden" name="redirect" value="https://arpnkv.github.io/wedding-invite/artyom_and_alexandra/thank_you.html" />
+
                 <div class="form-group">
                     <label>Сможете ли вы присутствовать на торжестве?</label>
                     <label><input type="radio" name="attendance" value="Мы придем" required> Я приду / Мы придем</label>
@@ -227,10 +234,10 @@
 
                 <div class="form-group">
                     <label>Будет общий трансфер, предположительно от ледового дворца</label>
-                    <label><input type="radio" name="attendance" value="Мы придем" required> Нужен трансфер туда</label>
-                    <label><input type="radio" name="attendance" value="Прийти не получится"> Нужен трансфер обратно</label>
-                    <label><input type="radio" name="attendance" value="Буду с парой"> Нужен трансфер в обе стороны</label>
-                    <label><input type="radio" name="attendance" value="Буду с парой"> Трансфер не нужен</label>
+                    <label><input type="radio" name="transfer" value="Нужен трансфер туда" required> Нужен трансфер туда</label>
+                    <label><input type="radio" name="transfer" value="ПНужен трансфер обратно"> Нужен трансфер обратно</label>
+                    <label><input type="radio" name="transfer" value="Нужен трансфер в обе стороны"> Нужен трансфер в обе стороны</label>
+                    <label><input type="radio" name="transfer" value="Трансфер не нужен"> Трансфер не нужен</label>
                 </div>
 
                 <button type="submit" class="submit-btn">Отправить</button>

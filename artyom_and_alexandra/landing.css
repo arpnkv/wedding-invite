@@ -13,6 +13,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     background-image: url('photos/bg.jpg');
     background-size: cover;
     background-position: center;
@@ -33,7 +34,7 @@ body::before {
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 42px;
     margin: 0;
 }
@@ -94,7 +95,6 @@ h1, h2 {
     max-width: 500px;
     height: auto;
     display: block;
-    margin-top: 20px;
 }
 
 /* Программа дня */
@@ -121,9 +121,9 @@ h1, h2 {
 }
 
 .schedule-list .time {
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
 }
 
 .schedule-list .left img {
@@ -134,8 +134,8 @@ h1, h2 {
 .schedule-list .text-block h3 {
     font-size: 18px;
     margin: 0 0 5px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
 }
 
 .schedule-list .text-block p {
@@ -153,6 +153,7 @@ h1, h2 {
 
 .countdown-section h2 {
     font-family: 'Playfair Display', serif;
+    font-weight: 300;
     font-size: 28px;
     margin-bottom: 30px;
     color: #333;
@@ -179,15 +180,16 @@ h1, h2 {
 
 .countdown-item span {
     font-size: 32px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
     display: block;
 }
 
 .countdown-item small {
     font-size: 14px;
     color: #777;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
 }
 
 /* Локация */
@@ -195,7 +197,8 @@ h1, h2 {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Georgia', serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
 }
 
 .location-section h2 {
@@ -204,6 +207,8 @@ h1, h2 {
 }
 
 .location-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     margin: 10px 0;
     line-height: 1.6;
@@ -250,6 +255,7 @@ h1, h2 {
 
 .details-title {
     font-family: 'Playfair Display', serif;
+    font-weight: 300;
     font-size: 36px;
     margin-bottom: 40px;
 }
@@ -261,6 +267,7 @@ h1, h2 {
 
 .detail-block p {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -281,12 +288,14 @@ h1, h2 {
 
 .dresscode-title {
     font-family: 'Playfair Display', serif;
+    font-weight: 300;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .dresscode-text {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.6;
     color: #333;
@@ -314,8 +323,9 @@ h1, h2 {
 }
 
 .organizer-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
     font-size: 20px;
-    font-weight: 600;
     margin-top: 10px;
 }
 
@@ -352,19 +362,24 @@ h1, h2 {
 }
 
 /* Опросник */
-.rsvp-section div {
+.rsvp-section {
+    padding: 60px 20px;
+}
+
+.rsvp-section-content {
     max-width: 720px;
-    margin: 60px auto;
-    text-align: center;
+    margin: 0 auto 60px auto;
 }
 
 .rsvp-title {
     font-family: 'Playfair Display', serif;
+    font-weight: 300;
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
 .rsvp-subtitle {
+    font-weight: 300;
     font-size: 1rem;
     margin-bottom: 30px;
     line-height: 1.5;
@@ -378,14 +393,23 @@ h1, h2 {
     margin-bottom: 25px;
 }
 
-.form-group label {
+.form-group-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #000;
+}
+
+.form-group label.option {
     display: block;
     margin-bottom: 5px;
-    font-weight: 400;
-    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333;
     cursor: pointer;
-    white-space: normal;
-    word-break: break-word;
 }
 
 .form-group small {
@@ -403,7 +427,6 @@ h1, h2 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.6);
     padding: 10px 10px 8px 0;
     outline: none;
-    font-family: inherit;
     width: 100%;
     font-size: 1rem;
     color: #000;

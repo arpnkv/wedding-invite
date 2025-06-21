@@ -10,7 +10,7 @@
     <meta property="og:image" content="URL_картинки_свадьбы">
     <link rel="icon" href="wedding-ring.png">
     <link rel="stylesheet" href="landing.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -172,14 +172,14 @@
             <div class="organizer-icons">
                 <a href="tel:+375295183650" target="_blank"><img src="icons/phone.png" alt="Звонок" /></a>
                 <a href="https://wa.me/375295183650" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp" /></a>
-                <a href="https://t.me/username" target="_blank"><img src="icons/telegram.png" alt="Telegram" /></a>
+                <a href="https://t.me/skarinkina" target="_blank"><img src="icons/telegram.png" alt="Telegram" /></a>
             </div>
         </div>
     </section>
 
     <!-- Опросник -->
     <section class="section rsvp-section">
-        <div>
+        <div class="rsvp-section-content">
 
             <h2 class="rsvp-title">Присутствие на торжестве</h2>
             <p class="rsvp-subtitle">
@@ -196,48 +196,60 @@
                 <input type="hidden" name="redirect" value="https://arpnkv.github.io/wedding-invite/artyom_and_alexandra/thank_you.html" />
 
                 <div class="form-group">
-                    <label>Сможете ли вы присутствовать на торжестве?</label>
-                    <label><input type="radio" name="attendance" value="Мы придем" required> Я приду / Мы придем</label>
-                    <label><input type="radio" name="attendance" value="Прийти не получится"> Прийти не получится</label>
-                    <label><input type="radio" name="attendance" value="Буду с парой"> Буду со своей парой (+1)</label>
-                    <label><input type="radio" name="attendance" value="Буду с парой"> Буду с детьми</label>
+                    <label class="form-group-title">Сможете ли вы присутствовать на торжестве?</label>
+                    <label class="option"><input type="radio" name="attendance" value="Мы придем" required> Я приду / Мы придем</label>
+                    <label class="option"><input type="radio" name="attendance" value="Прийти не получится"> Прийти не получится</label>
+                    <label class="option"><input type="radio" name="attendance" value="Буду с парой"> Буду со своей парой (+1)</label>
+                    <label class="option"><input type="radio" name="attendance" value="Буду с парой"> Буду с детьми</label>
                 </div>
 
                 <div class="form-group">
-                    <label for="name">Введите Имя и Фамилию</label>
+                    <label class="form-group-title" for="name">Введите Имя и Фамилию</label>
                     <input type="text" name="name" id="name" placeholder="Имя и фамилия(и)" required>
                     <small>если вы будете парой или семьей, то внесите все имена и фамилии</small>
                 </div>
 
                 <div class="form-group">
-                    <label>Предпочтения по напиткам (можно выбрать несколько):</label>
-                    <label><input type="checkbox" name="drinks" value="Вино красное"> Вино красное</label>
-                    <label><input type="checkbox" name="drinks" value="Вино белое"> Вино белое</label>
-                    <label><input type="checkbox" name="drinks" value="Виски"> Виски</label>
-                    <label><input type="checkbox" name="drinks" value="Виски"> Коньяк</label>
-                    <label><input type="checkbox" name="drinks" value="Водка"> Водка</label>
-                    <label><input type="checkbox" name="drinks" value="Шампанское"> Шампанское</label>
-                    <label><input type="checkbox" name="drinks" value="Безалкогольное"> Что-нибудь безалкогольное</label>
+                    <label class="form-group-title">Предпочтения по напиткам (можно выбрать несколько):</label>
+                    <label class="option"><input type="checkbox" name="drinks[]" value="Вино красное"> Вино красное</label>
+                    <label class="option"><input type="checkbox" name="drinks[]" value="Вино белое"> Вино белое</label>
+                    <label class="option"><input type="checkbox" name="drinks[]" value="Виски"> Виски</label>
+                    <label class="option"><input type="checkbox" name="drinks[]" value="Коньяк"> Коньяк</label>
+                    <label class="option"><input type="checkbox" name="drinks[]" value="Водка"> Водка</label>
+                    <label class="option"><input type="checkbox" name="drinks[]" value="Шампанское"> Шампанское</label>
+                    <label class="option"><input type="checkbox" name="drinks[]" value="Безалкогольное"> Что-нибудь безалкогольное</label>
                 </div>
 
                 <div class="form-group">
-                    <label>Предпочтения по еде:</label>
-                    <label><input type="checkbox" name="food" value="Не ем рыбу"> Не ем рыбу</label>
-                    <label><input type="checkbox" name="food" value="Не ем мясо"> Не ем мясо</label>
-                    <label><input type="checkbox" name="food" value="Кушаю всё"> Кушаю всё</label>
+                    <label class="form-group-title">Предпочтения по еде:</label>
+                    <label class="option"><input type="checkbox" name="food[]" value="Не ем рыбу"> Не ем рыбу</label>
+                    <label class="option"><input type="checkbox" name="food[]" value="Не ем мясо"> Не ем мясо</label>
+                    <label class="option"><input type="checkbox" name="food[]" value="Кушаю всё"> Кушаю всё</label>
                 </div>
 
                 <div class="form-group">
-                    <label for="comment">Если у вас есть аллергия на какой-либо продукт или напиток, то просим указать об этом в комментарии ниже:</label>
+                    <label class="form-group-title" for="comment">Если у вас есть аллергия на какой-либо продукт или напиток, то просим указать об этом в комментарии ниже:</label>
                     <textarea id="comment" name="comment" rows="4" placeholder="Ваш комментарий..."></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>Будет общий трансфер, предположительно от ледового дворца</label>
-                    <label><input type="radio" name="transfer" value="Нужен трансфер туда" required> Нужен трансфер туда</label>
-                    <label><input type="radio" name="transfer" value="ПНужен трансфер обратно"> Нужен трансфер обратно</label>
-                    <label><input type="radio" name="transfer" value="Нужен трансфер в обе стороны"> Нужен трансфер в обе стороны</label>
-                    <label><input type="radio" name="transfer" value="Трансфер не нужен"> Трансфер не нужен</label>
+                    <label class="form-group-title">Нужен ночлег:</label>
+                    <label class="option"><input type="radio" name="night" value="Да" required> Да</label>
+                    <label class="option"><input type="radio" name="night" value="Нет"> Нет</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-group-title">Будет общий трансфер, предположительно от ледового дворца:</label>
+                    <label class="option"><input type="radio" name="transfer" value="Нужен трансфер туда" required> Нужен трансфер туда</label>
+                    <label class="option"><input type="radio" name="transfer" value="Нужен трансфер обратно"> Нужен трансфер обратно</label>
+                    <label class="option"><input type="radio" name="transfer" value="Нужен трансфер в обе стороны"> Нужен трансфер в обе стороны</label>
+                    <label class="option"><input type="radio" name="transfer" value="Трансфер не нужен"> Трансфер не нужен</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-group-title">Планируете ли Вы быть на второй день:</label>
+                    <label class="option"><input type="radio" name="second day" value="Да" required> Да</label>
+                    <label class="option"><input type="radio" name="second day" value="Нет"> Нет</label>
                 </div>
 
                 <button type="submit" class="submit-btn">Отправить</button>

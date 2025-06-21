@@ -37,14 +37,3 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
-
-// Локация
-const mapContainer = document.querySelector('.map-container');
-
-mapContainer.addEventListener('mouseenter', () => {
-    mapContainer.classList.add('active');
-});
-
-mapContainer.addEventListener('mouseleave', () => {
-    mapContainer.classList.remove('active');
-});

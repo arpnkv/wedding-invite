@@ -1,29 +1,51 @@
 /* Стиль для страницы Спасибо */
-section {
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('photos/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+.container {
+    max-width: 720px;
+    margin: 80px auto;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.section {
+    padding: 50px 30px;
+    border-radius: 12px;
     text-align: center;
-    padding: 40px 20px;
 }
 
-section h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.section h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    color: #111;
 }
 
-section p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.back-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.back-btn:hover {
-    background-color: #ff4500;
+.section p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 0;
 }

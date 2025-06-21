@@ -33,7 +33,7 @@ body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.5);
     z-index: -1;
 }
 
@@ -584,5 +584,6 @@ input[type="checkbox"]:hover {
 
     .footer {
         margin-top: 0;
+        margin-bottom: 80px;
     }
 }

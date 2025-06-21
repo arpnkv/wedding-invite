@@ -115,15 +115,13 @@
             <p>Наша свадьба пройдет на базе отдыха «ТАМ, ГДЕ ХОРОШО». Она находится по адресу:</p>
             <p>Витебская обл., д. Дымовщина, ул. Леспромхозная, 42.</p>
             <img src="photos/place.png" alt="База отдыха" class="location-photo">
-            <div class="map-container">
-                <div class="map-overlay"></div>
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b5b3616f55c1e30fb86600a55de81a49b1c6bf370bde01da8368a24363e6603&amp;source=constructor"
-                    width="100%"
-                    height="400"
-                    allowfullscreen>
-                </iframe>
-            </div>
+            <a
+                href="yandexmaps://maps.yandex.ru/?text=Витебская+обл.,+Дымовщина,+ул.+Леспромхозная,+42"
+                class="btn"
+                target="_blank"
+            >
+                Как добраться
+            </a>
         </div>
     </section>
 
@@ -251,7 +249,7 @@
                     <label class="option"><input type="radio" name="second day" value="Нет"> Нет</label>
                 </div>
 
-                <button type="submit" class="submit-btn">Отправить</button>
+                <button type="submit" class="btn">Отправить</button>
             </form>
 
         </div>

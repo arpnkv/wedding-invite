@@ -31,58 +31,61 @@
     <!-- Программа дня -->
     <section class="section schedule-section">
         <h2>Программа дня</h2>
-        <ul class="schedule-list">
-            <li>
-                <div class="left">
-                    <span class="time">15:30</span>
-                    <img src="icons/wedding-location.png" alt="Иконка гостей" />
-                </div>
-                <div class="text-block">
-                    <h3>Сбор гостей</h3>
-                    <p>Просим взять с собой хорошее настроение и улыбки.</p>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <span class="time">16:00</span>
-                    <img src="icons/hall.png" alt="Иконка церемонии" />
-                </div>
-                <div class="text-block">
-                    <h3>Свадебная церемония</h3>
-                    <p>Приготовьте носовые платочки для трогательного момента.</p>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <span class="time">16:30</span>
-                    <img src="icons/photo-camera.png" alt="Иконка фото" />
-                </div>
-                <div class="text-block">
-                    <h3>Фото с гостями</h3>
-                    <p>Получим незабываемые эмоции и красивые фотографии.</p>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <span class="time">17:00</span>
-                    <img src="icons/dinner.png" alt="Иконка банкета" />
-                </div>
-                <div class="text-block">
-                    <h3>Праздничный банкет</h3>
-                    <p>Время вкусной еды, танцев и развлечений.</p>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <span class="time">00:00</span>
-                    <img src="icons/just-married.png" alt="Иконка окончания" />
-                </div>
-                <div class="text-block">
-                    <h3>Окончание мероприятия</h3>
-                    <p>К сожалению, даже такой прекрасный вечер может закончиться.</p>
-                </div>
-            </li>
-        </ul>
+        <div class="schedule-content">
+            <ul class="schedule-list">
+                <li>
+                    <div class="left">
+                        <span class="time">15:30</span>
+                        <img src="icons/wedding-location.png" alt="Иконка гостей" />
+                    </div>
+                    <div class="text-block">
+                        <h3>Сбор гостей</h3>
+                        <p>Просим взять с собой хорошее настроение и улыбки.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <span class="time">16:00</span>
+                        <img src="icons/hall.png" alt="Иконка церемонии" />
+                    </div>
+                    <div class="text-block">
+                        <h3>Свадебная церемония</h3>
+                        <p>Приготовьте носовые платочки для трогательного момента.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <span class="time">16:30</span>
+                        <img src="icons/photo-camera.png" alt="Иконка фото" />
+                    </div>
+                    <div class="text-block">
+                        <h3>Фото с гостями</h3>
+                        <p>Получим незабываемые эмоции и красивые фотографии.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <span class="time">17:00</span>
+                        <img src="icons/dinner.png" alt="Иконка банкета" />
+                    </div>
+                    <div class="text-block">
+                        <h3>Праздничный банкет</h3>
+                        <p>Время вкусной еды, танцев и развлечений.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <span class="time">00:00</span>
+                        <img src="icons/just-married.png" alt="Иконка окончания" />
+                    </div>
+                    <div class="text-block">
+                        <h3>Окончание мероприятия</h3>
+                        <p>К сожалению, даже такой прекрасный вечер может закончиться.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
     </section>
 
     <!-- Таймер -->
@@ -110,8 +113,8 @@
 
     <!-- Локация -->
     <section class="section location-section">
-        <div>
-            <h2>Локация</h2>
+        <h2>Локация</h2>
+        <div class="location-content">
             <p>Наша свадьба пройдет на базе отдыха «ТАМ, ГДЕ ХОРОШО». Она находится по адресу:</p>
             <p>Витебская обл., д. Дымовщина, ул. Леспромхозная, 42.</p>
             <img src="photos/place.png" alt="База отдыха" class="location-photo">
@@ -128,7 +131,6 @@
     <!-- Детали -->
     <section class="section details-section">
         <h2 class="details-title">Детали</h2>
-
         <div class="detail-block">
             <p>Ваше присутствие в день нашей свадьбы - самый значимый подарок для нас!</p>
             <hr>
@@ -156,7 +158,6 @@
     <!-- Организатор -->
     <section class="section organizer-section">
         <h2 class="organizer-title">Организатор свадьбы</h2>
-
         <div class="organizer-content">
             <img src="photos/organizer.jpg" alt="Организатор" class="organizer-photo" />
 
@@ -221,7 +222,7 @@
                     <label class="form-group-title">Предпочтения по еде:</label>
                     <label class="option"><input type="checkbox" name="food" value="Не ем рыбу"> Не ем рыбу</label>
                     <label class="option"><input type="checkbox" name="food" value="Не ем мясо"> Не ем мясо</label>
-                    <label class="option"><input type="checkbox" name="food" value="Кушаю всё"> Кушаю всё</label>
+                    <label class="option"><input type="checkbox" name="food" value="Кушаю всё"> Ем всё</label>
                 </div>
 
                 <div class="form-group">
@@ -230,7 +231,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-group-title">Нужен ночлег:</label>
+                    <label class="form-group-title">Нужен ночлег?</label>
                     <label class="option"><input type="radio" name="night" value="Да" required> Да</label>
                     <label class="option"><input type="radio" name="night" value="Нет"> Нет</label>
                 </div>
@@ -244,7 +245,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-group-title">Планируете ли Вы быть на второй день:</label>
+                    <label class="form-group-title">Планируете ли вы быть на второй день?</label>
                     <label class="option"><input type="radio" name="second day" value="Да" required> Да</label>
                     <label class="option"><input type="radio" name="second day" value="Нет"> Нет</label>
                 </div>

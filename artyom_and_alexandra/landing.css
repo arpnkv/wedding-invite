@@ -561,6 +561,18 @@ input[type="checkbox"]:hover {
         background-image: url('photos/bg-mobile.jpg');
     }
 
+    h1, h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
     .headline-section {
         flex-direction: column;
         align-items: center;
@@ -568,7 +580,7 @@ input[type="checkbox"]:hover {
     }
 
     .main-photo {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
@@ -601,18 +613,6 @@ input[type="checkbox"]:hover {
     .organizer-photo {
         width: 120px;
         height: auto;
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-
-    h1, h2 {
-        font-size: 28px;
-    }
-
-    .section {
-        padding: 30px 0;
     }
 
     .submit-btn {
